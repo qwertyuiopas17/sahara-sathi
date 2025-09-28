@@ -1,0 +1,1245 @@
+<!-- ariel rounded mt bold -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="manifest" href="/manifest.json"> 
+    <meta name="theme-color" content="#21808D">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAHARA SAATHI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        /* --- Start of style.css content --- */
+        :root {
+          /* Primitive Color Tokens */
+          --color-white: rgba(255, 255, 255, 1);
+          --color-black: rgba(0, 0, 0, 1);
+          --color-cream-50: rgba(252, 252, 249, 1);
+          --color-cream-100: rgba(255, 255, 253, 1);
+          --color-gray-200: rgba(245, 245, 245, 1);
+          --color-gray-300: rgba(167, 169, 169, 1);
+          --color-gray-400: rgba(119, 124, 124, 1);
+          --color-slate-500: rgba(98, 108, 113, 1);
+          --color-brown-600: rgba(94, 82, 64, 1);
+          --color-charcoal-700: rgba(31, 33, 33, 1);
+          --color-charcoal-800: rgba(38, 40, 40, 1);
+          --color-slate-900: rgba(19, 52, 59, 1);
+          --color-teal-300: rgba(50, 184, 198, 1);
+          --color-teal-400: rgba(45, 166, 178, 1);
+          --color-teal-500: rgba(33, 128, 141, 1);
+          --color-teal-600: rgba(29, 116, 128, 1);
+          --color-teal-700: rgba(26, 104, 115, 1);
+          --color-teal-800: rgba(41, 150, 161, 1);
+          --color-red-400: rgba(255, 84, 89, 1);
+          --color-red-500: rgba(192, 21, 47, 1);
+          --color-orange-400: rgba(230, 129, 97, 1);
+          --color-orange-500: rgba(168, 75, 47, 1);
+        
+          /* RGB versions for opacity control */
+          --color-brown-600-rgb: 94, 82, 64;
+          --color-teal-500-rgb: 33, 128, 141;
+          --color-slate-900-rgb: 19, 52, 59;
+          --color-slate-500-rgb: 98, 108, 113;
+          --color-red-500-rgb: 192, 21, 47;
+          --color-red-400-rgb: 255, 84, 89;
+          --color-orange-500-rgb: 168, 75, 47;
+          --color-orange-400-rgb: 230, 129, 97;
+        
+          /* Background color tokens (Light Mode) */
+          --color-bg-1: rgba(59, 130, 246, 0.08); /* Light blue */
+          --color-bg-2: rgba(245, 158, 11, 0.08); /* Light yellow */
+          --color-bg-3: rgba(34, 197, 94, 0.08); /* Light green */
+          --color-bg-4: rgba(239, 68, 68, 0.08); /* Light red */
+          --color-bg-5: rgba(147, 51, 234, 0.08); /* Light purple */
+          --color-bg-6: rgba(249, 115, 22, 0.08); /* Light orange */
+          --color-bg-7: rgba(236, 72, 153, 0.08); /* Light pink */
+          --color-bg-8: rgba(6, 182, 212, 0.08); /* Light cyan */
+        
+          /* Semantic Color Tokens (Light Mode) */
+          --color-background: var(--color-cream-50);
+          --color-surface: var(--color-cream-100);
+          --color-text: var(--color-slate-900);
+          --color-text-secondary: var(--color-slate-500);
+          --color-primary: var(--color-teal-500);
+          --color-primary-hover: var(--color-teal-600);
+          --color-primary-active: var(--color-teal-700);
+          --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+          --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+          --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+          --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+          --color-btn-primary-text: var(--color-cream-50);
+          --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+          --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+          --color-error: var(--color-red-500);
+          --color-success: var(--color-teal-500);
+          --color-warning: var(--color-orange-500);
+          --color-info: var(--color-slate-500);
+          --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+          --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
+        
+          /* Common style patterns */
+          --focus-ring: 0 0 0 3px var(--color-focus-ring);
+          --focus-outline: 2px solid var(--color-primary);
+          --status-bg-opacity: 0.15;
+          --status-border-opacity: 0.25;
+          --select-caret-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23134252' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+          --select-caret-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f5f5f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+        
+          /* RGB versions for opacity control */
+          --color-success-rgb: 33, 128, 141;
+          --color-error-rgb: 192, 21, 47;
+          --color-warning-rgb: 168, 75, 47;
+          --color-info-rgb: 98, 108, 113;
+        
+          /* Typography */
+          --font-family-base: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+          --font-family-mono: "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo,
+            Monaco, Consolas, monospace;
+          --font-size-xs: 11px;
+          --font-size-sm: 12px;
+          --font-size-base: 14px;
+          --font-size-md: 14px;
+          --font-size-lg: 16px;
+          --font-size-xl: 18px;
+          --font-size-2xl: 20px;
+          --font-size-3xl: 24px;
+          --font-size-4xl: 30px;
+          --font-weight-normal: 400;
+          --font-weight-medium: 500;
+          --font-weight-semibold: 550;
+          --font-weight-bold: 600;
+          --line-height-tight: 1.2;
+          --line-height-normal: 1.5;
+          --letter-spacing-tight: -0.01em;
+        
+          /* Spacing */
+          --space-0: 0;
+          --space-1: 1px;
+          --space-2: 2px;
+          --space-4: 4px;
+          --space-6: 6px;
+          --space-8: 8px;
+          --space-10: 10px;
+          --space-12: 12px;
+          --space-16: 16px;
+          --space-20: 20px;
+          --space-24: 24px;
+          --space-32: 32px;
+        
+          /* Border Radius */
+          --radius-sm: 6px;
+          --radius-base: 8px;
+          --radius-md: 10px;
+          --radius-lg: 12px;
+          --radius-full: 9999px;
+        
+          /* Shadows */
+          --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
+          --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+          --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04),
+            0 2px 4px -1px rgba(0, 0, 0, 0.02);
+          --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04),
+            0 4px 6px -2px rgba(0, 0, 0, 0.02);
+          --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+            inset 0 -1px 0 rgba(0, 0, 0, 0.03);
+        
+          /* Animation */
+          --duration-fast: 150ms;
+          --duration-normal: 250ms;
+          --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+        
+          /* Layout */
+          --container-sm: 640px;
+          --container-md: 768px;
+          --container-lg: 1024px;
+          --container-xl: 1280px;
+        }
+        
+        /* Base styles */
+        html {
+          font-size: var(--font-size-base);
+          font-family: var(--font-family-base);
+          line-height: var(--line-height-normal);
+          color: var(--color-text);
+          background-color: var(--color-background);
+          -webkit-font-smoothing: antialiased;
+          box-sizing: border-box;
+        }
+        
+        body {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+          background: linear-gradient(to right, #cffafe, #93c5fd, #818cf8);
+        }
+
+        /* Added to prevent background scroll when modal is open */
+        body.modal-open {
+            overflow: hidden;
+        }
+        
+        *,
+        *::before,
+        *::after {
+          box-sizing: inherit;
+        }
+        
+        /* Typography */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          margin: 0;
+          font-weight: var(--font-weight-semibold);
+          line-height: var(--line-height-tight);
+          color: var(--color-text);
+          letter-spacing: var(--letter-spacing-tight);
+        }
+        
+        h1 { font-size: 3rem; font-weight: 700; }
+        h2 { font-size: var(--font-size-3xl); }
+        h3 { font-size: var(--font-size-2xl); }
+        h4 { font-size: var(--font-size-xl); }
+        h5 { font-size: var(--font-size-lg); }
+        h6 { font-size: var(--font-size-md); }
+        p { margin: 0 0 var(--space-16) 0; }
+        a { color: var(--color-primary); text-decoration: none; transition: color var(--duration-fast) var(--ease-standard); }
+        a:hover { color: var(--color-primary-hover); }
+        
+        /* Buttons */
+        .btn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: var(--space-8) var(--space-16);
+          border-radius: var(--radius-full);
+          font-size: var(--font-size-base);
+          font-weight: 500;
+          line-height: 1.5;
+          cursor: pointer;
+          transition: all var(--duration-normal) var(--ease-standard);
+          border: none;
+          text-decoration: none;
+          position: relative;
+        }
+        
+        .btn:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+        .btn--primary { background: var(--color-teal-700); color: var(--color-white); }
+        .btn--primary:hover { background: var(--color-teal-600); }
+        .btn--secondary { background: rgba(255,255,255,0.1); color: var(--color-white); border: 1px solid rgba(255,255,0.5); }
+        .btn--secondary:hover { background: rgba(255,255,255,0.2); }
+        .btn--lg { padding: var(--space-12) var(--space-24); font-size: var(--font-size-lg); }
+        .btn--full-width { width: 100%; }
+        .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        
+        /* Form elements */
+        .form-control {
+          display: block;
+          width: 100%;
+          padding: var(--space-8) var(--space-12);
+          font-size: var(--font-size-md);
+          line-height: 1.5;
+          color: var(--color-text);
+          background-color: var(--color-surface);
+          border: 1px solid var(--color-border);
+          border-radius: var(--radius-base);
+          transition: border-color var(--duration-fast) var(--ease-standard),
+            box-shadow var(--duration-fast) var(--ease-standard);
+        }
+
+        select.form-control {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          background-image: var(--select-caret-light);
+          background-repeat: no-repeat;
+          background-position: right var(--space-12) center;
+          background-size: 16px;
+          padding-right: var(--space-32);
+        }
+
+        .form-control:focus { border-color: var(--color-primary); outline: var(--focus-outline); }
+        .form-label { display: block; margin-bottom: var(--space-8); font-weight: var(--font-weight-medium); font-size: var(--font-size-sm); }
+        .form-group { margin-bottom: var(--space-16); }
+        
+        /* Container layout */
+        .container {
+          width: 100%;
+          margin-right: auto;
+          margin-left: auto;
+          padding-right: var(--space-16);
+          padding-left: var(--space-16);
+        }
+        
+        @media (min-width: 1024px) { .container { max-width: var(--container-lg); } }
+        @media (min-width: 1280px) { .container { max-width: var(--container-xl); } }
+        .mt-16 { margin-top: var(--space-16); }
+        
+        /* Header and Navigation */
+        .header { 
+            background-color: transparent; 
+            border-bottom: none; 
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 100; 
+        }
+        .header.solid {
+            background-color: var(--color-surface);
+            position: sticky;
+            border-bottom: 1px solid var(--color-border);
+        }
+        .header.solid .nav__brand h2,
+        .header.solid .nav__actions .btn,
+        .header.solid .nav__actions a,
+        .header.solid .language-dropdown-toggle {
+            color: var(--color-text);
+        }
+        .header.solid .language-dropdown-toggle svg {
+            stroke: var(--color-text);
+        }
+
+        .header.solid .nav__actions #loginBtn {
+            border-color: var(--color-border);
+        }
+        .header.solid .nav__actions #registerBtn {
+            background: #10B981;
+            color: var(--color-white);
+            border-color: #10B981;
+        }
+         
+        .nav { display: flex; justify-content: space-between; align-items: center; padding: var(--space-24); max-width: var(--container-xl); margin: 0 auto; }
+        .nav__brand h2 { 
+            margin: 0; 
+            color: var(--color-white); 
+            font-size: 1.875rem;
+            font-style: italic;
+            font-weight: 700;
+        }
+        .nav__actions { display: flex; align-items: center; gap: var(--space-24); }
+        .nav__actions a, .nav__actions button {
+            background: transparent;
+            border: none;
+            color: var(--color-white);
+            font-size: var(--font-size-lg);
+            font-weight: 500; /* Increased visibility */
+            padding: var(--space-8);
+            text-decoration: none;
+        }
+        .nav__actions .btn:hover, .nav__actions a:hover {
+             opacity: 0.8;
+        }
+        .nav__actions #registerBtn {
+             background: #10B981;
+             border-radius: var(--radius-md);
+             padding: var(--space-8) var(--space-16);
+        }
+        .nav__actions #registerBtn:hover {
+            background: #059669;
+            opacity: 1;
+        }
+
+        .language-select {
+          display: none; /* Hide old select */
+        }
+        
+        /* --- NEW LANGUAGE DROPDOWN STYLES --- */
+        .language-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .language-dropdown-toggle {
+            cursor: pointer;
+            gap: 8px; /* space between text and arrow */
+            transition: opacity var(--duration-fast) ease;
+            background: transparent;
+            border: none;
+            color: var(--color-white);
+            font-size: var(--font-size-lg);
+            font-weight: 500; /* Increased visibility */
+            padding: var(--space-8);
+            display: flex;
+            align-items: center;
+        }
+
+        .language-dropdown-toggle svg {
+            stroke: var(--color-white);
+            transition: transform var(--duration-normal) ease;
+        }
+
+        .language-dropdown.open .language-dropdown-toggle svg {
+            transform: rotate(180deg);
+        }
+
+        .language-dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            margin-top: 8px;
+            min-width: 150px;
+            border-radius: var(--radius-md);
+            padding: var(--space-8);
+            
+            /* Liquid glass effect */
+            background: rgba(10, 10, 10, 0.4);
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+
+            z-index: 10;
+            max-height: 150px; /* approx 3.5 items (item height around 40px + padding) */
+            overflow-y: auto;
+            
+            /* Fade-in animation */
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: opacity var(--duration-fast) ease, transform var(--duration-fast) ease;
+        }
+
+        .language-dropdown.open .language-dropdown-menu {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .language-option {
+            display: block;
+            padding: var(--space-8) var(--space-12);
+            color: var(--color-white);
+            text-decoration: none;
+            font-size: var(--font-size-md);
+            font-weight: 400;
+            border-radius: var(--radius-sm);
+            transition: background-color var(--duration-fast) ease;
+            cursor: pointer;
+        }
+
+        .language-option:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Custom Scrollbar for the dropdown */
+        .language-dropdown-menu::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .language-dropdown-menu::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .language-dropdown-menu::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            border: 2px solid transparent;
+            background-clip: content-box;
+        }
+
+        .language-dropdown-menu::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        /* Main Layout */
+        .main { 
+            flex: 1; 
+        }
+        .screen { display: none; padding: 120px var(--space-32) var(--space-32); animation: fadeIn 0.5s ease-in-out; }
+        .screen.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        
+        .auth-container { max-width: 450px; margin: 0 auto; background: rgba(255,255,255,0.8); backdrop-filter: blur(10px); padding: var(--space-32); border-radius: var(--radius-lg); }
+        .student-id-display { background-color: var(--color-secondary); padding: var(--space-12); border-radius: var(--radius-base); font-weight: var(--font-weight-bold); font-size: var(--font-size-lg); margin: var(--space-16) 0; color: var(--color-primary); }
+        .auth-switch-text { font-size: var(--font-size-sm); color: var(--color-text-secondary); text-align: center; }
+        .auth-switch-text a { color: var(--color-primary); font-weight: var(--font-weight-medium); text-decoration: underline; }
+        .back-btn { margin-bottom: var(--space-24); }
+        
+        /* Modal Styles */
+        .modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); display: flex; align-items: center; justify-content: center; z-index: 1000; animation: fadeIn 0.3s; }
+        .modal.hidden { display: none; }
+        .modal-content { background: var(--color-surface); border-radius: var(--radius-lg); padding: var(--space-32); max-width: 400px; width: 90%; text-align: center; animation: scaleUp 0.3s; }
+        @keyframes scaleUp { from { transform: scale(0.9); opacity: 0;} to { transform: scale(1); opacity: 1;} }
+        .modal-content h3 { color: var(--color-success); margin-bottom: var(--space-16); }
+        .hidden { display: none !important; }
+        
+        /* --- End of style.css content --- */
+
+        /* Additional styles for the enhanced landing page */
+        body { 
+            scroll-behavior: smooth; 
+        }
+        .hero-section { 
+            padding: 0;
+            text-align: left;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background-image: url('https://i.ibb.co/zW18gfpW/Gemini-Generated-Image-shhc0shhc0shhc0s.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.4);
+            z-index: 1;
+        }
+
+        .hero-section .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-section .welcome-title {
+            /* Applying a subtle vertical gradient to give the text depth */
+            background: linear-gradient(to bottom, #ffffff, #EAEAEA);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero-section .welcome-subtitle {
+             color: rgba(255,255,255,0.9);
+             max-width: 500px;
+        }
+
+        #landingView {
+            padding-top: 0;
+        }
+
+        .section { padding: 80px var(--space-16); background-color: transparent; }
+        .section--grey { background-color: rgba(240, 244, 248, 0.8); backdrop-filter: blur(10px); }
+        .section-title { text-align: center; margin-bottom: var(--space-32); font-size: var(--font-size-3xl); }
+        .section-subtitle { text-align: center; max-width: 700px; margin: 0 auto var(--space-32); color: var(--color-text-secondary); font-size: var(--font-size-lg); }
+
+        /* Testimonials Section */
+        .testimonials-viewport { position: relative; width: 100%; padding: 20px 0; margin: 0 auto; overflow: hidden; }
+        .testimonials-grid { position: relative; display: flex; align-items: center; gap: var(--space-24); transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1); }
+        .testimonial-card { background-color: var(--color-surface); border-radius: var(--radius-lg); padding: var(--space-24); border: 1px solid var(--color-card-border); display: flex; flex-direction: column; width: 320px; flex-shrink: 0; transform: scale(0.9); opacity: 0.7; transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out, opacity 0.5s ease-in-out; }
+        .testimonial-card.active { border-color: var(--color-primary); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04); transform: scale(1.05); opacity: 1; }
+        .testimonial-nav { position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(255, 255, 255, 0.8); border: 1px solid var(--color-border); border-radius: 50%; width: 44px; height: 44px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: bold; color: var(--color-text-secondary); z-index: 10; transition: all 0.2s ease; }
+        .testimonial-nav.prev { left: 10px; }
+        .testimonial-nav.next { right: 10px; }
+
+        /* CTA Section */
+        .cta-section { text-align: center; background: linear-gradient(135deg, var(--color-primary), var(--color-teal-700)); color: var(--color-white); border-radius: var(--radius-lg); padding: var(--space-32); }
+        .cta-section h2 { color: var(--color-white); }
+        .cta-section p { color: rgba(255, 255, 255, 0.9); }
+        
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-24); }
+        .feature-card { background: var(--color-surface); border: 1px solid var(--color-card-border); border-radius: var(--radius-lg); padding: var(--space-24); text-align: left; transition: all var(--duration-normal) var(--ease-standard); }
+        .feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--color-primary); }
+        .feature-icon { 
+            height: 48px; 
+            width: 48px; 
+            margin-bottom: var(--space-16); 
+            background-color: var(--color-secondary); 
+            border-radius: var(--radius-lg); 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: var(--color-primary); 
+        }
+        
+        /* --- NEW FADE-IN ANIMATION STYLES --- */
+        .fade-in-element {
+            opacity: 0;
+            transform: translateY(25px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-element.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* --- NEW FOOTER STYLES --- */
+        .footer {
+            background-color: var(--color-charcoal-800);
+            color: var(--color-gray-300);
+            padding: var(--space-24) var(--space-16);
+            margin-top: 0;
+            border-top: none;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-24);
+            text-align: left;
+            margin: 0 auto;
+            max-width: var(--container-xl);
+        }
+
+        .footer-section h4 {
+            color: var(--color-white);
+            margin-bottom: var(--space-16);
+            font-size: var(--font-size-lg);
+        }
+
+        .footer-section p, .footer-section ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-size: var(--font-size-sm);
+        }
+
+        .footer-section ul li {
+            margin-bottom: var(--space-8);
+        }
+
+        .footer-section a {
+            color: var(--color-gray-300);
+            text-decoration: none;
+            transition: color var(--duration-fast) ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--color-white);
+        }
+
+        .footer #feedbackText {
+            background-color: var(--color-charcoal-700);
+            color: var(--color-gray-200);
+            border-color: var(--color-slate-500);
+            resize: vertical;
+        }
+        
+        .footer #feedbackText::placeholder {
+            color: var(--color-slate-500);
+        }
+
+        .footer-copyright {
+            text-align: center;
+            padding-bottom: var(--space-16);
+            margin-bottom: var(--space-16);
+            border-bottom: 1px solid var(--color-slate-500);
+            font-size: var(--font-size-sm);
+        }
+        .footer-copyright p {
+            margin: 0;
+        }
+
+        /* --- STYLES FROM INDEX.HTML FOR AUTH MODAL --- */
+        .card { 
+            background-color: rgba(255, 255, 255, 0.6); 
+            border-radius: var(--radius-lg); 
+            padding: 1.5rem; 
+            border: 1px solid var(--color-border); 
+            backdrop-filter: blur(24px); 
+            -webkit-backdrop-filter: blur(24px); 
+            box-shadow: 0 8px 32px 0 rgba(100, 116, 139, 0.1); 
+            transition: all 0.3s ease; 
+            position: relative; 
+            overflow: hidden; 
+        }
+
+        .auth-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            backdrop-filter: blur(5px);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .auth-modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .auth-container {
+            width: 100%;
+            max-width: 450px;
+            padding: 1rem;
+        }
+
+        /* Modified to fix scrolling and size issues */
+        .auth-modal .card {
+             padding: 2rem;
+             max-height: 90vh; /* Limits the height of the card */
+             overflow-y: auto; /* Adds a scrollbar ONLY if needed */
+        }
+        
+        /* Custom scrollbar for modal card */
+        .auth-modal .card::-webkit-scrollbar {
+            width: 12px; /* Made the scrollbar wider */
+        }
+        .auth-modal .card::-webkit-scrollbar-track {
+            background: rgba(0,0,0,0.1); /* Made the track slightly darker */
+            border-radius: var(--radius-base);
+        }
+        .auth-modal .card::-webkit-scrollbar-thumb {
+            background-color: var(--color-slate-500); /* Made the thumb more prominent */
+            border-radius: var(--radius-full);
+            border: 3px solid transparent; /* Increased border for a better look */
+            background-clip: content-box;
+        }
+        .auth-modal .card::-webkit-scrollbar-thumb:hover {
+            background-color: var(--color-primary); /* Added a hover effect */
+        }
+
+
+        .auth-header { text-align: center; margin-bottom: 2rem; }
+        .auth-header h1 { font-size: 2rem; color: var(--color-primary); font-weight: 700; }
+        .auth-header p { color: var(--color-text-secondary); }
+
+        .auth-modal .form-group { margin-bottom: 1.25rem; }
+        .auth-modal .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 500; font-size: 0.9rem; }
+        .auth-modal .form-control { width: 100%; padding: 0.85rem; border-radius: 8px; border: 1px solid var(--color-border); background-color: rgba(255, 255, 255, 0.5); color: var(--color-text); transition: all 0.3s; }
+        .auth-modal .form-control:focus { border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.3); outline: none; }
+        .auth-switch { text-align: center; margin-top: 1.5rem; font-size: 0.9rem; }
+        .auth-switch a { color: var(--color-primary); font-weight: 600; cursor: pointer; text-decoration: none; }
+        .auth-switch a:hover { text-decoration: underline; }
+
+        .otp-inputs { display: flex; justify-content: center; gap: 10px; margin: 2rem 0; }
+        .otp-input { width: 45px; height: 50px; text-align: center; font-size: 1.5rem; border-radius: 8px; border: 1px solid var(--color-border); background-color: rgba(255, 255, 255, 0.5); }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__brand" style="cursor: pointer;" onclick="document.getElementById('landingView').scrollIntoView();">
+                <h2 data-key="sahara_logo">SAHARA</h2>
+            </div>
+            <div class="nav__actions">
+                <a href="#footer" id="contactBtn" class="btn" data-key="contact">Contact</a>
+                
+                <div class="language-dropdown">
+                    <button class="language-dropdown-toggle">
+                        <span id="selectedLanguage">English</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="language-dropdown-menu">
+                        <a class="language-option" data-lang="en">English</a>
+                        <a class="language-option" data-lang="hi">हिंदी</a>
+                        <a class="language-option" data-lang="as">Assamese</a>
+                        <a class="language-option" data-lang="bn">Bengali</a>
+                        <a class="language-option" data-lang="gu">Gujarati</a>
+                        <a class="language-option" data-lang="kn">Kannada</a>
+                        <a class="language-option" data-lang="ml">Malayalam</a>
+                        <a class="language-option" data-lang="mr">Marathi</a>
+                        <a class="language-option" data-lang="or">Odia</a>
+                        <a class="language-option" data-lang="pa">Punjabi</a>
+                        <a class="language-option" data-lang="ta">Tamil</a>
+                        <a class="language-option" data-lang="te">Telugu</a>
+                    </div>
+                </div>
+
+                <button class="btn" id="loginBtn" data-key="login">Login</button>
+                <button class="btn" id="registerBtn" data-key="register">Register</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div id="landingView">
+            <section class="hero-section">
+                <div class="container">
+                    <h1 class="welcome-title" data-key="welcome_title">MAKING HEALTCARE ACCESSIBLE FOR ALL</h1>
+                    <p class="welcome-subtitle" data-key="welcome_subtitle">Understand your mental health, get support, and find resources tailored for you. Your journey to wellness starts here.</p>
+                    <div class="hero-cta" style="margin-top: 2rem;">
+                        <button class="btn btn--primary btn--lg" id="getStartedBtn" data-key="get_started">Get Started Today</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="features" class="section">
+                <div class="container">
+                    <h2 class="section-title fade-in-element">A Comprehensive Telemedical Health Ecosystem</h2>
+                    <p class="section-subtitle fade-in-element">We provide a full suite of tools to support students at every step of their mental wellness journey, ensuring no one feels alone.</p>
+                    <div class="feature-grid">
+                        <div class="feature-card fade-in-element">
+                            <div class="feature-icon" style="color: #60a5fa;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                            </div>
+                            <h3>Confidential Assessments</h3>
+                            <p>Use clinically-validated screeners like PHQ-9 and GAD-7 to gain anonymous insight into your mental well-being.</p>
+                        </div>
+                        <div class="feature-card fade-in-element">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06z"></path><path d="M12 21.05c-1.5 0-2.75-1.06-4-1.06-3 0-6 8-6 12.22A4.91 4.91 0 0 1 7 17c2.22 0 4-1.44 5-2 1 .56 2.78 2 5 2a4.9 4.9 0 0 1 5-4.78C22 10 19 2 16 2c-1.25 0-2.5 1.06-4 1.06z"></path></svg>
+                            </div>
+                            <h3>24/7 AI Support Chat</h3>
+                            <p>Our empathetic AI-powered assistant is always available to offer coping strategies, a listening ear, and real-time crisis detection.</p>
+                        </div>
+                        <div class="feature-card fade-in-element">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v15H6.5A2.5 2.5 0 0 1 4 14.5V4.5A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                            </div>
+                            <h3>Curated Resource Library</h3>
+                            <p>Access a rich library of CBT modules, mindfulness exercises, and educational content to build healthy habits.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--grey">
+                <div class="container">
+                    <h2 class="section-title fade-in-element">Trusted by Students Across India</h2>
+                    <div class="testimonials-viewport fade-in-element">
+                        <div class="testimonials-grid">
+                             <div class="testimonial-card">
+                                <p class="testimonial-text">"Using SAHARA felt truly anonymous and safe. The AI chatbot helped me through a tough exam week without any judgment. It's a game-changer for student mental health."</p>
+                                <div class="testimonial-author">Priya S.<span>B.Tech Student, IIT Delhi</span></div>
+                            </div>
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">"I was skeptical at first, but the assessment was surprisingly accurate. The resources recommended were genuinely helpful. I finally feel like I have tools to manage my anxiety."</p>
+                                <div class="testimonial-author">Arjun K.<span>B.Com Student, Jadavpur University</span></div>
+                            </div>
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">"The ability to book a session with a counselor directly from the platform made seeking help so much less intimidating. The entire process was seamless and private."</p>
+                                <div class="testimonial-author">Ananya R.<span>MBBS Student, VIT</span></div>
+                            </div>
+                        </div>
+                        <button id="testimonial-prev" class="testimonial-nav prev">&lt;</button>
+                        <button id="testimonial-next" class="testimonial-nav next">&gt;</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                 <div class="container">
+                    <div class="cta-section fade-in-element">
+                        <h2>Ready to Prioritize Your Mental Wellness?</h2>
+                        <p>Join thousands of students taking the first step towards a healthier mind. Your journey is confidential, supported, and secure.</p>
+                        <button class="btn btn--primary btn--lg" id="finalCtaBtn">Start for Free</button>
+                    </div>
+                 </div>
+            </section>
+        </div>
+        
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer-copyright">
+                     <p>&copy; 2024 SAHARA. A concept for Smart India Hackathon. All Rights Reserved.</p>
+                </div>
+                <div class="footer-container">
+                    <div class="footer-section">
+                        <h4>About SAHARA</h4>
+                        <p>Our mission is to provide accessible and anonymous mental wellness support for students across India. We believe in creating a safe space for everyone to start their journey towards a healthier mind.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Feedback</h4>
+                        <form id="feedbackForm">
+                            <textarea id="feedbackText" class="form-control" placeholder="Your feedback..." rows="3"></textarea>
+                            <button type="submit" class="btn btn--primary" style="margin-top: 8px;">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    
+    <!-- Auth Modal from index.html -->
+    <div id="authModal" class="auth-modal">
+        <div class="auth-container">
+            <!-- Login Screen -->
+            <section id="loginScreen" class="screen">
+                <div class="card">
+                    <div class="auth-header">
+                        <h1>Welcome Back!</h1>
+                        <p>Login to your Sehat Sahara account.</p>
+                    </div>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="loginUsername">Username</label>
+                            <input type="text" id="loginUsername" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" id="loginPassword" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn--primary" style="width: 100%;">Login</button>
+                    </form>
+                    <div class="auth-switch">
+                        <p>Don't have an account? <a class="switch-link" data-screen="registerScreen">Register here</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Registration Screen -->
+            <section id="registerScreen" class="screen">
+                <div class="card">
+                    <div class="auth-header">
+                        <h1>Create Account</h1>
+                        <p>Join Sehat Sahara to manage your health.</p>
+                    </div>
+                    <form id="registrationForm">
+                        <div class="form-group">
+                            <label for="registerAs">Register as...</label>
+                            <select id="registerAs" class="form-control">
+                                <option value="">-- Select Role --</option>
+                                <option value="student">Patient</option>
+                                <option value="doctor">Doctor</option>
+                                <option value="store">Pharmacy / Store</option>
+                                <option value="saathi">Sehat Saathi</option>
+                                <option value="admin">Admin</option>
+                            </select>
+                        </div>
+                        <div id="dynamic-form-fields"></div>
+                        <button type="submit" class="btn btn--primary" style="width: 100%;">Register</button>
+                    </form>
+                    <div class="auth-switch">
+                        <p>Already have an account? <a class="switch-link" data-screen="loginScreen">Login here</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- OTP Verification Screen -->
+            <section id="otpScreen" class="screen">
+                 <div class="card">
+                    <div class="auth-header">
+                        <h1>Verify Your Account</h1>
+                        <p>Enter the 6-digit OTP sent to your registered mobile number.</p>
+                    </div>
+                    <form id="otpForm">
+                        <div class="otp-inputs">
+                            <input type="text" class="otp-input" maxlength="1" required>
+                            <input type="text" class="otp-input" maxlength="1" required>
+                            <input type="text" class="otp-input" maxlength="1" required>
+                            <input type="text" class="otp-input" maxlength="1" required>
+                            <input type="text" class="otp-input" maxlength="1" required>
+                            <input type="text" class="otp-input" maxlength="1" required>
+                        </div>
+                        <button type="submit" class="btn btn--primary" style="width: 100%;">Verify & Create Account</button>
+                    </form>
+                 </div>
+            </section>
+        </div>
+    </div>
+    
+    <script>
+        const API_BASE_URL = 'http://127.0.0.1:5000/v1';
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // This is the new script content from index.html
+            const authModal = document.getElementById('authModal');
+            const loginBtn = document.getElementById('loginBtn');
+            const registerBtn = document.getElementById('registerBtn');
+            const getStartedBtn = document.getElementById('getStartedBtn');
+            const finalCtaBtn = document.getElementById('finalCtaBtn');
+
+            const registerAsSelect = document.getElementById('registerAs');
+            const dynamicFormContainer = document.getElementById('dynamic-form-fields');
+            const loginForm = document.getElementById('loginForm');
+            const registrationForm = document.getElementById('registrationForm');
+            const otpForm = document.getElementById('otpForm');
+            
+            let registeredUser = null;
+
+            const showAuthScreen = (screenId) => {
+                authModal.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+                const targetScreen = document.getElementById(screenId);
+                if (targetScreen) targetScreen.classList.add('active');
+            };
+
+            const openModal = (screenId) => {
+                document.body.classList.add('modal-open'); // Prevents background from scrolling
+                authModal.classList.add('active');
+                showAuthScreen(screenId);
+            };
+
+            const closeModal = () => {
+                document.body.classList.remove('modal-open'); // Allows background to scroll again
+                authModal.classList.remove('active');
+            };
+
+            const generateFormFields = () => {
+                dynamicFormContainer.innerHTML = `
+                    <div class="form-group"><label for="fullName">Full Name</label><input type="text" id="fullName" class="form-control" required></div>
+                    <div class="form-group"><label for="username">Username</label><input type="text" id="username" class="form-control" required></div>
+                    <div class="form-group"><label for="address">Address</label><textarea id="address" class="form-control" rows="2" required></textarea></div>
+                    <div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" class="form-control" required></div>
+                    <div class="form-group"><label for="aadhaar">Aadhaar / PAN Number</label><input type="text" id="aadhaar" class="form-control" required></div>
+                    <div class="form-group"><label for="password">Password</label><input type="password" id="password" class="form-control" required></div>
+                `;
+            };
+            
+            // Re-routing existing buttons to the new modal
+            if(getStartedBtn) getStartedBtn.addEventListener('click', () => openModal('registerScreen'));
+            if(finalCtaBtn) finalCtaBtn.addEventListener('click', () => openModal('registerScreen'));
+
+
+            if(loginBtn) loginBtn.addEventListener('click', () => openModal('loginScreen'));
+            if(registerBtn) registerBtn.addEventListener('click', () => openModal('registerScreen'));
+            
+            authModal.addEventListener('click', (e) => {
+                if (e.target === authModal) closeModal();
+                if (e.target.classList.contains('switch-link')) {
+                    e.preventDefault();
+                    showAuthScreen(e.target.dataset.screen);
+                }
+            });
+
+            if(registerAsSelect) {
+                registerAsSelect.addEventListener('change', () => {
+                    if (registerAsSelect.value) generateFormFields();
+                    else dynamicFormContainer.innerHTML = '';
+                });
+            }
+            
+            if(loginForm) {
+                loginForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const username = document.getElementById('loginUsername').value;
+                    let targetPage = '';
+                    if (username.toLowerCase().includes('doc')) targetPage = 'doctor.html';
+                    else if (username.toLowerCase().includes('admin')) targetPage = 'admin.html';
+                    else if (username.toLowerCase().includes('saathi')) targetPage = 'saathi.html';
+                    else if (username.toLowerCase().includes('store')) targetPage = 'store.html';
+                    else targetPage = 'patient.html';
+                    alert(`Login successful! Redirecting...`);
+                    window.location.href = targetPage;
+                });
+            }
+
+            if(registrationForm) {
+                registrationForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const role = registerAsSelect.value;
+                    if (!role) { alert('Please select a role to register.'); return; }
+                    
+                    registeredUser = { role: role };
+                    alert(`An OTP has been sent to your phone.`);
+                    showAuthScreen('otpScreen');
+                });
+            }
+            
+            if(otpForm){
+                otpForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    let targetPage = '';
+                    switch (registeredUser.role) {
+                        case 'student': targetPage = 'patient.html'; break;
+                        case 'doctor': targetPage = 'doctor.html'; break;
+                        case 'store': targetPage = 'store.html'; break;
+                        case 'saathi': targetPage = 'saathi.html'; break;
+                        case 'admin': targetPage = 'admin.html'; break;
+                        default: targetPage = 'patient.html';
+                    }
+                    alert(`Verification successful! Your account has been created.`);
+                    window.location.href = targetPage;
+                });
+            }
+
+            const otpInputs = document.querySelectorAll('.otp-input');
+            otpInputs.forEach((input, index) => {
+                input.addEventListener('keydown', (e) => {
+                    if (e.key >= 0 && e.key <= 9) {
+                        otpInputs[index].value = '';
+                        setTimeout(() => { if(index + 1 < otpInputs.length) otpInputs[index + 1].focus(); }, 10);
+                    } else if (e.key === 'Backspace') {
+                         setTimeout(() => { if(index - 1 >= 0) otpInputs[index - 1].focus(); }, 10);
+                    }
+                });
+            });
+
+            // --- Keeping original script functionality that doesn't conflict ---
+            const translations = {
+                en: { sahara_logo: "SAHARA", contact: "Contact", login: "Login", register: "Register", welcome_title: "Bridging distances with telemedicine", welcome_subtitle: "Instant video consultation, AI support,digital records and real time support available for all", get_started: "Get Started Today", feature1_title: "Confidential Assessments", feature1_desc: "Use clinically-validated screeners like PHQ-9 and GAD-7 to gain insight into your mental well-being.", feature2_title: "24/7 AI Support", feature2_desc: "Our AI-powered assistant is always available to offer coping strategies and a listening ear.", feature3_title: "Resource Library", feature3_desc: "Access a curated library of CBT modules, mindfulness exercises, and educational content.", back_to_home: "← Back to Home", login_type_title: "Select Login Type", login_as_student: "Login as Student", login_as_doctor: "Login as Doctor", login_as_admin: "Login as Admin", no_account: "Don't have an account?", register_here: "Register here.", back: "← Back", student_login: "Student Login", student_id: "Student ID", password: "Password", doctor_login: "Doctor Login", medical_license: "Medical License No.", admin_login: "Admin Login", employee_id: "Employee ID", register_title: "Create Student Account", full_name: "Full Name", email_address: "Email Address", select_college: "Select College", select_stream: "Select Stream", select_year: "Select Year / Semester", already_account: "Already have an account?", login_here: "Login here.", reg_success_title: "Registration Successful!", reg_success_msg: "Your account has been created. Your unique Student ID is:", reg_success_prompt: "Please log in with your new ID.", go_to_login: "Go to Login" },
+                hi: { sahara_logo: "सहारा", contact: "संपर्क", login: "लॉग इन करें", register: "पंजीकरण करें", welcome_title: "आपके मन के लिए एक सुरक्षित स्थान", welcome_subtitle: "अपने मानसिक स्वास्थ्य को समझें, सहायता प्राप्त करें, और आपके लिए तैयार किए गए संसाधन खोजें। आपकी সুস্থতার यात्रा यहीं से शुरू होती है।", get_started: "आज ही शुरू करें", feature1_title: "गोपनीय मूल्यांकन", feature1_desc: "अपने मानसिक स्वास्थ्य के बारे में जानकारी प्राप्त करने के लिए PHQ-9 और GAD-7 जैसे चिकित्सकीय रूप से मान्य स्क्रीनर्स का उपयोग करें।", feature2_title: "24/7 एआई सहायता", feature2_desc: "हमारा एआई-संचालित सहायक मुकाबला करने की रणनीतियाँ और सुनने के लिए हमेशा उपलब्ध है।", feature3_title: "संसाधन पुस्तकालय", feature3_desc: "सीबीटी मॉड्यूल, माइंडफुलनेस अभ्यास और शैक्षिक सामग्री की एक क्यूरेटेड लाइब्रेरी तक पहुँचें।", back_to_home: "← होम पर वापस जाएं", login_type_title: "लॉगिन प्रकार चुनें", login_as_student: "छात्र के रूप में लॉगिन करें", login_as_doctor: "डॉक्टर के रूप में लॉगिन करें", login_as_admin: "एडमिन के रूप में लॉगिन करें", no_account: "खाता नहीं है?", register_here: "यहां पंजीकरण करें।", back: "← वापस", student_login: "छात्र लॉगिन", student_id: "छात्र आईडी", password: "पासवर्ड", doctor_login: "डॉक्टर लॉगिन", medical_license: "मेडिकल लाइसेंस नं.", admin_login: "एडमिन लॉगिन", employee_id: "कर्मचारी आईडी", register_title: "छात्र खाता बनाएं", full_name: "पूरा नाम", email_address: "ईमेल पता", select_college: "कॉलेज चुनें", select_stream: "स्ट्रीम चुनें", select_year: "वर्ष / सेमेस्टर चुनें", already_account: "पहले से ही एक खाता है?", login_here: "यहां लॉग इन करें।", reg_success_title: "पंजीकरण सफल!", reg_success_msg: "आपका खाता बन गया है। आपकी विशिष्ट छात्र आईडी है:", reg_success_prompt: "कृपया अपनी नई आईडी से लॉग इन करें।", go_to_login: "लॉगिन पर जाएं" }
+            };
+            let currentLanguage = 'en';
+
+            function updateUIText() {
+                document.querySelectorAll('[data-key]').forEach(element => {
+                    const key = element.getAttribute('data-key');
+                    if (translations[currentLanguage] && translations[currentLanguage][key]) {
+                        element.textContent = translations[currentLanguage][key];
+                    } else if (translations['en'] && translations['en'][key]) {
+                        element.textContent = translations['en'][key];
+                    }
+                });
+            }
+            
+            const languageDropdown = document.querySelector('.language-dropdown');
+            const dropdownToggle = document.querySelector('.language-dropdown-toggle');
+            const languageOptions = document.querySelectorAll('.language-option');
+            const selectedLanguageSpan = document.getElementById('selectedLanguage');
+
+            if (languageDropdown) {
+                dropdownToggle.addEventListener('click', () => {
+                    languageDropdown.classList.toggle('open');
+                });
+
+                document.addEventListener('click', (e) => {
+                    if (!languageDropdown.contains(e.target)) {
+                        languageDropdown.classList.remove('open');
+                    }
+                });
+
+                languageOptions.forEach(option => {
+                    option.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const lang = option.getAttribute('data-lang');
+                        const langText = option.textContent;
+
+                        if (lang) {
+                            currentLanguage = lang;
+                            updateUIText();
+                        }
+                        
+                        selectedLanguageSpan.textContent = langText;
+                        languageDropdown.classList.remove('open');
+                    });
+                });
+            }
+            
+            const testimonialsViewport = document.querySelector('.testimonials-viewport');
+            const testimonialsGrid = document.querySelector('.testimonials-grid');
+            const testimonials = document.querySelectorAll('.testimonial-card');
+            const prevBtn = document.getElementById('testimonial-prev');
+            const nextBtn = document.getElementById('testimonial-next');
+
+            if (testimonials.length > 0) {
+                let currentIndex = 1;
+                let autoPlayTimer;
+
+                function updateCarousel() {
+                    if (!testimonials[currentIndex]) return;
+                    const activeCard = testimonials[currentIndex];
+                    const viewportCenter = testimonialsViewport.offsetWidth / 2;
+                    const cardCenter = activeCard.offsetLeft + activeCard.offsetWidth / 2;
+                    const scrollAmount = cardCenter - viewportCenter;
+                    testimonialsGrid.style.transform = `translateX(-${scrollAmount}px)`;
+                    testimonials.forEach((card, index) => {
+                        card.classList.toggle('active', index === currentIndex);
+                    });
+                }
+
+                function setGridPadding() {
+                    if (testimonials.length > 0) {
+                        const padding = (testimonialsViewport.offsetWidth / 2) - (testimonials[0].offsetWidth / 2);
+                        testimonialsGrid.style.padding = `0 ${padding}px`;
+                    }
+                }
+
+                function moveTo(newIndex) {
+                    currentIndex = (newIndex + testimonials.length) % testimonials.length;
+                    updateCarousel();
+                }
+
+                function startAutoPlay() {
+                    stopAutoPlay();
+                    autoPlayTimer = setInterval(() => {
+                        moveTo(currentIndex + 1);
+                    }, 5000);
+                }
+
+                function stopAutoPlay() {
+                    clearInterval(autoPlayTimer);
+                }
+
+                nextBtn.addEventListener('click', () => {
+                    stopAutoPlay();
+                    moveTo(currentIndex + 1);
+                    startAutoPlay();
+                });
+
+                prevBtn.addEventListener('click', () => {
+                    stopAutoPlay();
+                    moveTo(currentIndex - 1);
+                    startAutoPlay();
+                });
+                
+                window.addEventListener('resize', () => {
+                    setGridPadding();
+                    updateCarousel();
+                });
+                
+                setGridPadding();
+                moveTo(currentIndex);
+                startAutoPlay();
+            }
+
+            const feedbackForm = document.getElementById('feedbackForm');
+            if(feedbackForm) {
+                feedbackForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const feedbackText = document.getElementById('feedbackText').value;
+                    if (feedbackText.trim()) {
+                        console.log('Feedback submitted:', feedbackText);
+                        alert('Thank you for your feedback!');
+                        document.getElementById('feedbackText').value = '';
+                    } else {
+                        alert('Please enter your feedback before submitting.');
+                    }
+                });
+            }
+
+            const fadeInElements = document.querySelectorAll('.fade-in-element');
+            if (window.IntersectionObserver) {
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 }); 
+                
+                fadeInElements.forEach(el => {
+                    observer.observe(el);
+                });
+            } else {
+                fadeInElements.forEach(el => el.classList.add('is-visible'));
+            }
+            updateUIText();
+        });
+        const lenis = new Lenis({
+          duration: 1.2,
+          easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+          smooth: true,
+        });
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+    </script>
+    <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then((registration) => {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        })
+        .catch((error) => {
+          console.log('ServiceWorker registration failed: ', error);
+        });
+    });
+  }
+</script>
+</body>
+</html>
+
